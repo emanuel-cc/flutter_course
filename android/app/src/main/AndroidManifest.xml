@@ -6,6 +6,11 @@
          In most cases you can leave this as-is, but you if you want to provide
          additional functionality it is fine to subclass or reimplement
          FlutterApplication and put your custom class here. -->
+
+    <!--Agregar estas tres líneas-->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
     <application
         android:name="io.flutter.app.FlutterApplication"
         android:label="flutter_course"
@@ -29,5 +34,10 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
+        <!--Agregar estas dos líneas de google maps-->
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyAAw4woNIssZ0P5Lonws9W-9LTRHRCMyqc"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
     </application>
+    <!--Agregar esta línea-->
+    <activity android:name="com.apptreesoftware.mapview.MapActivity" android:theme="@style/Theme.AppCompat.Light.DarkActionBar"/>
 </manifest>

@@ -26,6 +26,7 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
+	
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>
@@ -41,5 +42,8 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
+	<!--Agregar esta linea-->
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>User location is required to add a product</string>
 </dict>
 </plist>
